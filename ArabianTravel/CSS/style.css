@@ -233,4 +233,25 @@ footer {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
- 
+.banner__container {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .banner__card {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--extra-light);
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .banner__card h4 {
+    font-size: 5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .banner__card p {
+    color: var(--text-light);
+  }
