@@ -4,86 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday Packages & Destinations</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Arabian Travel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="destinasi.html">Destinasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pemesanan.html">Pemesanan</a></li>
-                </ul>
+<body class="homepage-background">
+    <div class="glass-background">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Arabian Travel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="destinasi.html">Destinasi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pemesanan.html">Pemesanan</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <!-- Hero Section -->
-    <header class="hero-section">
+    <header class="hero-section glass-effect">
         <div>
             <h1>Explore the Best Holiday Packages</h1>
             <p class="lead">Discover unforgettable destinations and tailor-made tours just for you!</p>
         </div>
     </header>
-
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center">Tempat Wisata yang Sedang Viral</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/images/wisata1.jpg" class="card-img-top" alt="Wisata 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Menara Abraj Al-Bait</h5>
-                            <p class="card-text">Bangunan tertinggi di Mekkah.</p>
-                        </div>
+    
+   
+    <!-- Holiday Packages Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Popular Destinations</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card glass-hover">
+                    <img src="path/to/destination1-image.jpg" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Riyadh</h5>
+                        <p class="card-text">The vibrant capital of Saudi Arabia, offering a mix of modern architecture and cultural landmarks.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/images/wisata2.jpg" class="card-img-top" alt="Wisata 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Al-Balad Jeddah</h5>
-                            <p class="card-text">Kota tua penuh sejarah.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="assets/images/wisata3.jpg" class="card-img-top" alt="Wisata 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Pegunungan Taif</h5>
-                            <p class="card-text">Pemandangan sejuk nan hijau.</p>
-                        </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card glass-hover">
+                    <img src="path/to/destination2-image.jpg" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeddah</h5>
+                        <p class="card-text">Known as the "Bride of the Red Sea," Jeddah boasts stunning coastlines and rich history.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Holiday Packages Section -->
     <section class="container my-5">
         <h2 class="text-center mb-4">Holiday Packages</h2>
         <div class="row">
@@ -123,32 +98,7 @@
         </div>
     </section>
 
-    <!-- Popular Destinations Section -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Popular Destinations</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <img src="path/to/destination1-image.jpg" class="card-img-top" alt="Destination 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Riyadh</h5>
-                        <p class="card-text">The vibrant capital of Saudi Arabia, offering a mix of modern architecture and cultural landmarks.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card">
-                    <img src="path/to/destination2-image.jpg" class="card-img-top" alt="Destination 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Jeddah</h5>
-                        <p class="card-text">Known as the "Bride of the Red Sea," Jeddah boasts stunning coastlines and rich history.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
- <!-- Tempat Wisata Viral (3 Cards) -->
+ 
     <section class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center">Informasi Hotel</h2>
@@ -183,7 +133,26 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <div class="batas-bawah py-3"></div>
+
+   
+    <!-- Footer dan Sponsor -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Arabian Travel. All Rights Reserved.</p>
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2>Logo Sponsor</h2>
+                <div class="d-flex justify-content-center gap-3">
+                    <img src="assets/sponsors/sponsor1.png" alt="Sponsor 1" height="50">
+                    <img src="assets/sponsors/sponsor2.png" alt="Sponsor 2" height="50">
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="Bootstrap/JS/bootstrap.bundle.js.map"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
