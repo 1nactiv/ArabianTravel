@@ -4,8 +4,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0A0A0A, #D4AF37, #027333);
+    background: linear-gradient(to right, #FFD700, #B8860B);
+    background-size: 200% 200%;
 }
+
+
 
   .inner {
     text-align: center;
@@ -235,23 +238,33 @@ footer {
 
 .banner__container {
     display: grid;
+    grid-auto-flow: column; /* Mengatur elemen dalam satu baris */
+    grid-auto-columns: minmax(150px, auto); /* Atur ukuran elemen */
     gap: 2rem;
-  }
-  
-  .banner__card {
+    overflow-x: auto; /* Opsional: Scroll jika elemen tidak muat */
+}
+
+
+.banner__card {
     padding: 2rem 1rem;
     text-align: center;
-    background-color: var(--extra-light);
+    background-color:#f9f9f9f9;
     border-radius: 2rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .banner__card h4 {
-    font-size: 5rem;
-    font-weight: 500;
-    color: var(--primary-color);
+.section__container {
+    display: grid;
+    margin: auto;
+    padding: 5rem 1rem;
   }
   
-  .banner__card p {
-    color: var(--text-light);
+.banner__card h4 {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #007BFF;
+  }
+  
+.banner__card p {
+    color: #007BFF;
   }
