@@ -196,7 +196,9 @@ footer {
 
 
 .homepage-background {
-    background-image: url('/ArabianTravel/images/pexels-pixabay-35061.jpg');
+    
+    background-image: url(ArabianTravel/images/pexels-pixabay-35061.jpg);
+    
 }
 
 .container-inner {
