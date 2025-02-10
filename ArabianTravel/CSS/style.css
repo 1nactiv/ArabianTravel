@@ -1,5 +1,6 @@
 /* Umum */
-@import "tailwindcss";
+@import "bootstrap/dist/css/bootstrap.min.css"; /* Import Bootstrap */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
