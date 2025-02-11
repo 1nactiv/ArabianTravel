@@ -1,5 +1,12 @@
 /* Umum */
-@import "bootstrap/dist/css/bootstrap.min.css"; /* Import Bootstrap */
+@import "bootstrap/dist/css/bootstrap.min.css"; 
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -16,7 +23,7 @@ body {
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.2); /* Warna background semi-transparan */
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Border tipis untuk efek kaca */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Border tipis untuk efek kaca */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow untuk kedalaman */
     backdrop-filter: blur(10px); /* Efek blur untuk glassmorphism */
     margin: 50px 0; /* Spasi atas dan bawah */
@@ -40,13 +47,16 @@ body {
   
 /* Navbar */
 .navbar-brand {
-    font-weight: bold;
-    color: #007BFF;
+    color: #2e8ef6;
+    font-family: "Oleo Script", serif;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal
 }
 
 .navbar-brand:hover {
     color: #0056b3;
-
+    
 }
 
 .nav-link.active {
@@ -134,13 +144,18 @@ footer {
     transform: translateY(-50%);
   }
 .header-content h1, .header-content h2 {
-    font-weight: bold;
+    font-family: "Kalam", serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header-content p {
+    font-family: "Kalam", serif;
     font-size: 1.2rem;
     font-weight: 300;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
  
   /* Glassmorphism Effect */
