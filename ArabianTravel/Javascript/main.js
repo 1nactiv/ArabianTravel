@@ -21,3 +21,4 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
         document.getElementById("customAlert").remove();
     }, 3000);
 });
+

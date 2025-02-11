@@ -2,7 +2,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css"; 
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -18,19 +18,27 @@ body {
 
 
 
+
   .inner {
     text-align: center;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.2); /* Warna background semi-transparan */
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.3); /* Border tipis untuk efek kaca */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow untuk kedalaman */
-    backdrop-filter: blur(10px); /* Efek blur untuk glassmorphism */
     margin: 50px 0; /* Spasi atas dan bawah */
     transition: background-color 0.3s ease-in-out;
+    font-family: "Tajawal", serif;
+    font-weight: 500;
+    font-size: 20px;
+    
 
 }
+ h3 {
+    font-family: "Tajawal", serif;
+    font-weight: 700;
+    font-size: 30px;
 
+ }
 .inner:hover {
     background-color: rgba(255, 255, 255, 0.3); /* Perubahan warna saat hover */
 }
@@ -98,7 +106,6 @@ footer {
     padding: auto;
 }
 
-
 .carousel-caption h5 {
     font-size: 1.75rem; /* Memperbesar ukuran judul */
     font-weight: bold;
@@ -144,17 +151,18 @@ footer {
     transform: translateY(-50%);
   }
 .header-content h1, .header-content h2 {
-    font-family: "Kalam", serif;
+    
+    font-family: "Tajawal", serif;
+    font-weight: 900;
     font-size: 50px;
-    font-weight: 700;
     font-style: normal;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header-content p {
-    font-family: "Kalam", serif;
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-family: "Tajawal", serif;
+    font-weight: 400;
+    font-size: 25px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
  
@@ -177,9 +185,22 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/ArabianTravel/images/Carousel\ 2.jpg') no-repeat center center/cover;
+    background: url('/ArabianTravel/images/pexels-pixabay-53537.jpg') no-repeat center center/cover;
     position: relative;
+    font-family: "Tajawal", serif;
+    font-weight: 900;
 }
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    
+}
+    
 /* Hover Effect */
 .glass-hover {
     background: rgba(255, 255, 255, 0.2); 
@@ -288,3 +309,6 @@ footer {
 .banner__card p {
     color: #007BFF;
   }
+
+ 
+  
