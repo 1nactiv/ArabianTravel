@@ -75,10 +75,12 @@ body {
 /* Section Heading */
 h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 4rem;
     text-align: center;
+    font-family: "Tajawal", serif;
+    font-weight: 700;
 }
+    
 
 /* Form Pemesanan */
 form {
@@ -124,6 +126,9 @@ footer {
     border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
     padding: 10px;
 }
+
+
+
 .header-background-video-container {
     position: relative;
     width: 100%;
@@ -194,10 +199,16 @@ footer {
 .hero-section h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    font-family: "Tajawal", serif;
+    font-weight: 900;
+
 }
 
 .hero-section p {
     font-size: 20px;
+    font-family: "Tajawal", serif;
+    font-weight: 400;
+   
     
 }
     
@@ -263,6 +274,7 @@ footer {
     border-radius: 15px; /* Sudut melengkung */
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    object-fit: cover;
 }
 
 .package-card:hover, .card:hover {
@@ -275,6 +287,20 @@ footer {
 .card-body {
     color: #fff; 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: "Tajawal", serif;
+    font-weight: 900;
+}
+.card-title {
+    font-family: "Tajawal", serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+.card-img-top {
+    width: auto;  
+    height: 200px; 
+    object-fit: cover;
+    display: flex;
+
 }
 
 .banner__container {
@@ -310,5 +336,30 @@ footer {
     color: #007BFF;
   }
 
- 
-  
+  .alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+ .container-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 65px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px); 
+    transition: background-color 0.3s ease-in-out;
+    
+ }
+
+.homepage-3{
+    background-color: #ffd700;
+}
