@@ -203,7 +203,7 @@ footer {
     font-size: 25px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
- 
+
   /* Glassmorphism Effect */
 .glass-effect {
     background: rgba(255, 255, 255, 0.2); 
@@ -217,33 +217,60 @@ footer {
     text-align: center; 
 }
 
-/* Responsif */
+/* --- HERO SECTION --- */
 .hero-section {
-    height: 400px; 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/ArabianTravel/images/pexels-pixabay-53537.jpg') no-repeat center center/cover;
+    text-align: center;
+    height: 100vh; /* Biar selalu penuh di layar */
+    background-color: #C2B280;
+    color: white;
+    padding: 20px;
+}
+
+/* Overlay gelap agar teks tetap terbaca */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparan hitam */
+}
+
+/* Kotak teks */
+.hero-content {
     position: relative;
-    font-family: "Tajawal", serif;
-    font-weight: 900;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
 }
 
-.hero-section h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-family: "Tajawal", serif;
-    font-weight: 900;
-
+/* Styling teks */
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.hero-section p {
-    font-size: 20px;
-    font-family: "Tajawal", serif;
-    font-weight: 400;
-   
-    
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 15px;
 }
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+
+
+
     
 /* Hover Effect */
 .glass-hover {
@@ -278,8 +305,10 @@ footer {
 
 
 .homepage-background {
-
-    background: url('/ArabianTravel/images/Padang Pasir.jpg');
+  background-image: url('/ArabianTravel/images/gurun.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
     
 }
 
@@ -337,37 +366,58 @@ footer {
 }
 
 .banner__container {
-    display: grid;
-    grid-auto-flow: column; /* Mengatur elemen dalam satu baris */
-    grid-auto-columns: minmax(150px, auto); /* Atur ukuran elemen */
-    gap: 2rem;
-    overflow-x: auto; /* Opsional: Scroll jika elemen tidak muat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
-
 .banner__card {
-    padding: 2rem 1rem;
+    min-width: 220px;
+    padding: 2rem;
     text-align: center;
-    background-color:#f9f9f9f9;
-    border-radius: 2rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-.section__container {
-    display: grid;
-    margin: auto;
-    padding: 5rem 1rem;
-  }
-  
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.banner__card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+}
+
 .banner__card h4 {
-    font-size: 5rem;
-    font-weight: 500;
-    color: #007BFF;
-  }
-  
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #FFD700, #FF8C00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .banner__card p {
-    color: #007BFF;
-  }
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* Tambahan untuk Mobile */
+@media (max-width: 768px) {
+    .banner__container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
 
   .alert {
     position: fixed;
@@ -390,11 +440,23 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(10px); 
     transition: background-color 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     
  }
+ .flip-animation {
+    transform: rotateY(180deg);
+}
+.bg-solid {
+    background-color: white !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: none;
+}
 
 .homepage-3{
-    background-color: #ffd700;
+  background-image: url('/ArabianTravel/images/langitt.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
@@ -452,4 +514,35 @@ footer {
         text-align: center;
     }
 }
+@media (max-width: 768px) { /* Tablet & HP */
+    .hero-content {
+        max-width: 90%;
+        padding: 15px;
+    }
 
+    .hero-content h1 {
+        font-size: 2.2rem; /* Perkecil teks */
+    }
+
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) { /* HP Kecil */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}

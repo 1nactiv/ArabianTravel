@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pemesanan - Arabian Travel</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="homepage-3">
@@ -27,20 +28,19 @@
 
     <section class="section__container banner__container">
         <div class="banner__card">
-          <h4>10+</h4>
-          <p>Years Experience</p>
-        </div>
-        <div class="banner__card ">
-          <h4>12K</h4>
-          <p>Happy Clients</p>
+            <h4 id="yearsExperience">10+</h4>
+            <p>Years Experience</p>
         </div>
         <div class="banner__card">
-          <h4>4.8</h4>
-          <p>Overall Ratings</p>
+            <h4 id="happyClients">12K</h4>
+            <p>Jumlah Pendaftar</p>
         </div>
-      </section>
-
-
+        <div class="banner__card">
+            <h4 id="overallRatings">4.8</h4>
+            <p>Overall Ratings</p>
+        </div>
+    </section>
+    
     <!-- Form Pemesanan -->
     <section class="py-5">
         <div class="container-form">
@@ -57,14 +57,16 @@
                 <div class="mb-3">
                     <label for="package" class="form-label">Pilih Paket Liburan</label>
                     <select class="form-select" id="package">
-                        <option value="1">Paket 1: Rp 10.000.000</option>
-                        <option value="2">Paket 2: Rp 20.000.000</option>
+                        <option value="1">Luxury Desert Safari</option>
+                        <option value="2">Historical Saudi Tour</option>
+                        <option value="3">Red Sea Adventure</option>
+                        <option value="4">Umrah</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Daftar</button>
             </form>
 
-            <p class="mt-3">Jumlah Pendaftar: <span id="userCount">0</span></p>
+            
         </div>
     </section>
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday Packages & Destinations</title>
     <link href="Bootstrap/CSS/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body class="homepage-background">
@@ -13,10 +14,10 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand co" href="index.html">ArabianTravel</a>
-                
+        
                 <!-- Toggler Button -->
                 <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <i class="fas fa-bars text-white fs-3"></i> <!-- Ikon FontAwesome -->
+                    <span class="navbar-toggler-icon"></span> <!-- Ikon Bootstrap -->
                 </button>
         
                 <!-- Menu Items -->
@@ -37,14 +38,16 @@
         </nav>
         
     <!-- Hero Section -->
-    <header class="hero-section glass-effect">
-        <div>
+    <header class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
             <h1>Jelajahi Destinasi Impian Anda</h1>
             <h2>استكشف وجهات أحلامك</h2>
             <p class="lead">Rasakan pengalaman perjalanan eksklusif dengan layanan premium dan destinasi luar biasa.</p>
             <p class="lead">استمتع بتجربة سفر فاخرة مع خدمات متميزة ووجهات مذهلة.</p>
         </div>
     </header>
+    
     
    
     <!-- Popular Destinasi -->
@@ -172,6 +175,6 @@
     </footer>
 
     <script src="Bootstrap/JS/bootstrap.bundle.min.js.map"></script>
-    <script src="/ArabianTravel/Javascript/main.js"></script>
+    <script src="Javascript/main.js"></script>
 </body>
 </html>
