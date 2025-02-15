@@ -24,3 +24,19 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
         alertDiv.remove();
     }, 3000);
 });
+document.addEventListener("scroll", function () {
+    let navbar = document.querySelector(".custom-navbar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        let navbarCollapse = document.querySelector(".navbar-collapse");
+        if (navbarCollapse.classList.contains("show")) {
+            new bootstrap.Collapse(navbarCollapse).hide();
+        }
+    });
+});

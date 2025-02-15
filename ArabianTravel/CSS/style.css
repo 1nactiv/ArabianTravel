@@ -55,8 +55,8 @@ body {
   
 /* Navbar */
 .navbar-brand {
-    color: #2e8ef6;
-    font-family: "Oleo Script", serif;
+    color: #f7f7f7;
+    font-family: "Tajawal", serif;
     font-size: 30px;
     font-weight: 700;
     font-style: normal
@@ -71,6 +71,39 @@ body {
     font-weight: bold;
     color: #007BFF !important;
 }
+/* Navbar Styling */
+.custom-navbar {
+    transition: background 0.3s;
+}
+
+.custom-navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8); /* Navbar menjadi gelap saat di-scroll */
+}
+
+@media (max-width: 991px) {
+    .custom-navbar {
+        background: rgba(0, 0, 0, 0.8); /* Navbar tetap gelap di mode mobile */
+    }
+}
+
+/* Efek hover pada link */
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important; /* Warna teks */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Warna emas saat hover */
+}
+
+/* Toggler Button Styling */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
 
 /* Section Heading */
 h2 {
@@ -363,3 +396,60 @@ footer {
 .homepage-3{
     background-color: #ffd700;
 }
+
+
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9); /* Background lebih gelap di mode mobile */
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .header-background-video-container {
+        height: 60vh;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .header-content p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 250px; /* Atur tinggi lebih kecil */
+        object-fit: cover; /* Agar tidak terdistorsi */
+    }
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .d-flex.justify-content-center {
+        flex-wrap: wrap;
+    }
+    .d-flex.justify-content-center img {
+        width: 70px; /* Atur ukuran lebih kecil */
+        height: auto;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
